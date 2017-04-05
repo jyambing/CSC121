@@ -1,0 +1,39 @@
+<!doctype html>
+<!-- oldmac.html                    Joan Yambing -->
+<!-- This page displays a verse of Old MacDonald -->
+<!-- =========================================== -->
+
+<html>
+ <head>
+   <title> Old Mac Verse </title>
+   <script type="text/javascript">
+     function OldMacVerse(animal, sound) 
+     // Assumes: animal is the name of an animal, sound is the sound it makes
+     // Results: displays a verse of the song "Old MacDonald Had a Farm" in outputDiv
+     {
+       document.getElementById('outputDiv').innerHTML =  document.getElementById('outputDiv').innerHTML +
+       '<p> Old MacDonald had a farm, E-I-E-I-O. <br>' +
+       'And on that farm he had a ' + animal + ', E-I-E-I-O. <br>' +
+       'With a ' + sound + '-' + sound + ' here, and a ' + sound + '-' + sound +
+       ', there <br>'+ ' Here a ' + sound + ' there a ' + sound + 
+       ', everywhere a ' + sound + '-' + sound + '. <br>'+
+       'Old MacDonald had a farm, E-I-E-I-O. </p>';
+       
+     }
+   </script> 
+ </head>
+
+ <body>
+   <div style="text-align:center">
+     <h2>Old Mac Verse Generator</h2>
+     <p>
+       Click on one of the buttons below to get your verse!
+     </p>
+  	 <input type="button" value="Pig" onclick="OldMacVerse('pig', 'oink');">
+     <input type="button" value="Duck" onclick="OldMacVerse('duck', 'quack');">
+     <input type="button" value="Cow" onclick="OldMacVerse('cow', 'moo');">
+     <hr>
+     <div id="outputDiv"></div>
+   </div>
+ </body>
+</html>

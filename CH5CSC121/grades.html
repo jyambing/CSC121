@@ -1,0 +1,30 @@
+<!doctype html>
+<!-- grades.html                            Joan Yambing -->
+<!-- Web page that calculates a student's grade average. -->
+<!-- =================================================== -->
+
+<html>
+ <head>
+   <title> Grade Calculator </title>
+ </head>
+
+ <body>
+   <h2>Grade Calculator</h2>
+   <p>
+     Enter your homework average: <input type="text" id="homeworkAverage" size=10 value=""> <br>
+   	 Enter your lab average: <input type="text" id="labAverage" size=10 value=""><br>
+   	 Enter your midterm exam score: <input type="text" id="midExam" size=10 value=""><br>
+   	 Enter your final exam score: <input type="text" id="finalExam" size=10 value=""><br>
+   </p>   
+   <input type="button" value="Calculate Grade" 
+          onclick="homework = (parseFloat(document.getElementById('homeworkAverage').value))*.25;
+          		   lab= (parseFloat(document.getElementById('labAverage').value))*.2;
+          		   midterm= (parseFloat(document.getElementById('midExam').value))* .25;
+          		   final= (parseFloat(document.getElementById('finalExam').value))*.3;
+                   grade = homework + lab + + midterm + final;
+                   document.getElementById('outputDiv').innerHTML=
+                       'Your course average should be: ' + grade;">
+   <hr>
+   <div id="outputDiv"></div>
+ </body>
+</html>

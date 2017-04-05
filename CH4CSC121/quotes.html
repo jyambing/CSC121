@@ -1,0 +1,43 @@
+<!doctype html>
+<!-- quotes.html                       Joan Yambing -->
+<!-- This page changes an image source on button clicks.  -->
+
+<html>
+	<head>
+		<title> Quotes Joany Likes </title>
+	</head>
+	
+	<body> 	
+		<div style= "text-align:center">
+		<h1>
+			Quotes Joany Likes
+		</h1>
+		<img id= "Joany" src="joany.jpeg">
+ 		<br>
+		<input type= "button" value= "John F. Kennedy"
+			onclick= "document.getElementById('outputDiv').innerHTML= 
+			'Those who dare to fail miserably can acheive greatly' + 
+			' <i> -- John F. Kennedy</i>.' ;
+			document.getElementById('Joany').src='jfk.jpg';">
+			
+		<input type= "button" value= "Ryan Gosling"
+			onclick= "document.getElementById('outputDiv').innerHTML=
+			'You can do whatever you really love to do, no matter what is is' + ' <i> -- Ryan Gosling</i>';
+			document.getElementById('Joany').src='rygos.jpg';">
+			
+		<input type= "button" value= "Marilyn Monroe"
+			onclick= "document.getElementById('outputDiv').innerHTML= 
+			'So keep your head high, keep your chin up, and most importantly, keep smiling,' +
+			' because life’s a beautiful thing and there’s so much to smile about' + ' <i> -- Marilyn Monroe</i>.';
+			document.getElementById('Joany').src='marilyn.jpg';">
+		<input type= "button" value= "Clear Quote"
+			onclick= "document.getElementById('outputDiv').innerHTML= 
+			'Choose another quote';
+			document.getElementById('Joany').src='joany.jpeg';">
+			<hr>
+			<div id= "outputDiv">
+			Choose one of the "Quotes Joany Likes"
+			</div>
+		</div>
+	</body>
+</html>

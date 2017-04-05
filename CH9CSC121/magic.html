@@ -1,0 +1,37 @@
+<!doctype html>
+<!-- magic.html                      		Joan Yambing -->
+<!-- This page simulates and displays the a Magic 8-ball. -->
+<!-- =================================================== -->
+
+<html>
+ <head>
+   <title> Magic 8-Ball </title>
+   <script type= "text/javascript" src= "http://balance3e.com/random.js"></script>
+   <script type="text/javascript">
+     function ShakeBall()
+     // Assumes: die images are in balance3e.com/Images
+     // Results: displays a randomly selected image of a 6-sided die
+     {
+       document.getElementById('outputDiv').innerHTML = 'The Magic 8-Ball Says: '
+       + RandomOneOf(['yes','no','maybe','probably','unlikely','lol','wait what?']);
+     }
+   </script>
+ </head>
+
+ <body>
+   <div style="text-align:center"> 
+   <h2>Magic 8-ball (Mattel, Inc.)</h2>
+     <p>
+      Enter a question, then click on the Magic 8-ball to receive its wisdom. 
+      <br>
+      <input type="text" id="inchBox" size= 100>
+      <br>
+       <img id="8ballImg" alt="8-ball image"
+            src="http://balance3e.com/Images/8ball.gif">
+            
+     </p>
+     <input type="button" value="Click to Shake" onclick="ShakeBall();">
+     	<div id="outputDiv"></div> 
+   </div>
+ </body>
+</html>

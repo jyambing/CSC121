@@ -1,0 +1,27 @@
+<!doctype html>
+<!-- help2.html                       Joan Yambing -->
+<!-- Web Page that displays a help message when a button is clicked.  -->
+
+<html>
+	<head>
+		<title> Button Help </title>
+	</head>
+	
+	<body> 	
+		<p>
+			Contents of the page.
+		</p>
+		<input type= "button" value= "Click for Help"
+			onclick= "document.getElementById('outputDiv').innerHTML= 
+			'If you have any trouble with this site, ' + 
+			'just close your computer and go outside for some fresh air.';">
+		
+		<input type= "button" value= "Clear Help"
+			onclick= "document.getElementById('outputDiv').innerHTML= 
+			'Welcome to my Site!';">
+			<hr>
+			<div id= "outputDiv">
+			Welcome to my site!
+			</div>
+	</body>
+</html>

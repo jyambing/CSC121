@@ -1,0 +1,23 @@
+<!doctype html>
+<!-- resize2.html                       Joan Yambing -->
+<!-- This page resizes an image on mouseover.  -->
+
+<html>
+	<head>
+		<title> Resize Image 2</title>
+	</head>
+	
+	<body>
+		<div style= "text-align:center">
+			<img id= "Pineapples" src="pineapple.jpg">
+			<p>
+				<input type="button" value= "Expand Image"
+					onclick=document.getElementById('Pineapples').src='pineapple.jpg';
+			 "Pineapples.height = 1000; Pineapples.width = 500;" >
+					
+				<input type="button" value ="Restore Image"
+					onclick=document.getElementById('Pineapples').src='pineapple.jpg';">
+			</p>
+		</div>
+	</body>
+</html>
